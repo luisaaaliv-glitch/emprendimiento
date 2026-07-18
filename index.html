@@ -1,270 +1,296 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vantara | Tienda de Ropa Online</title>
+    <title>VANTARA | Moda Online</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <link rel="stylesheet" href="estilos.css">
 
-        body{
-            background:#f4f1eb;
-            color:#222;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        /* HEADER */
-        header{
-            background:#1b1b1b;
-            color:#d4a15d;
-            text-align:center;
-            padding:30px;
-            box-shadow:0 3px 10px rgba(0,0,0,.3);
-        }
+    <script src="script.js" defer></script>
 
-        header h1{
-            font-size:2.8rem;
-            letter-spacing:4px;
-        }
-
-        header p{
-            color:#f2e3c6;
-            margin-top:10px;
-            font-size:1rem;
-        }
-
-        /* NAV */
-        nav{
-            background:#2a2a2a;
-            padding:15px;
-        }
-
-        nav ul{
-            display:flex;
-            justify-content:center;
-            gap:30px;
-            list-style:none;
-            flex-wrap:wrap;
-        }
-
-        nav a{
-            color:#f5f5f5;
-            text-decoration:none;
-            font-weight:bold;
-            transition:.3s;
-        }
-
-        nav a:hover{
-            color:#d4a15d;
-        }
-
-        /* HERO */
-        .hero{
-            text-align:center;
-            padding:70px 20px;
-            background:linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-            url("https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1500&q=80");
-            background-size:cover;
-            background-position:center;
-            color:white;
-        }
-
-        .hero h2{
-            font-size:2.5rem;
-            margin-bottom:15px;
-        }
-
-        .hero p{
-            max-width:700px;
-            margin:auto;
-            font-size:1.1rem;
-        }
-
-        main{
-            width:90%;
-            max-width:1200px;
-            margin:auto;
-            padding:50px 0;
-        }
-
-        h2.titulo{
-            text-align:center;
-            color:#6d4c2f;
-            margin-bottom:35px;
-        }
-
-        /* GRID */
-        .productos{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-            gap:30px;
-        }
-
-        article{
-            background:white;
-            border-radius:15px;
-            overflow:hidden;
-            box-shadow:0 8px 20px rgba(0,0,0,.12);
-            transition:.3s;
-        }
-
-        article:hover{
-            transform:translateY(-8px);
-        }
-
-        article img{
-            width:100%;
-            height:330px;
-            object-fit:cover;
-        }
-
-        .info{
-            padding:20px;
-            text-align:center;
-        }
-
-        .info h3{
-            margin-bottom:10px;
-            color:#222;
-        }
-
-        .precio{
-            font-size:1.3rem;
-            color:#b47b38;
-            font-weight:bold;
-            margin-bottom:15px;
-        }
-
-        button{
-            background:#1b1b1b;
-            color:white;
-            border:none;
-            padding:12px 25px;
-            border-radius:30px;
-            cursor:pointer;
-            transition:.3s;
-        }
-
-        button:hover{
-            background:#b47b38;
-        }
-
-        footer{
-            background:#1b1b1b;
-            color:white;
-            text-align:center;
-            padding:30px;
-            margin-top:50px;
-        }
-
-        footer a{
-            color:#d4a15d;
-            text-decoration:none;
-            margin:0 8px;
-        }
-
-        footer a:hover{
-            text-decoration:underline;
-        }
-
-        @media(max-width:768px){
-
-            header h1{
-                font-size:2.1rem;
-            }
-
-            .hero h2{
-                font-size:2rem;
-            }
-
-            nav ul{
-                flex-direction:column;
-                gap:15px;
-            }
-
-        }
-    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>VANTARA</h1>
-    <p>Moda que refleja tu esencia.</p>
-</header>
+    <!-- HEADER -->
 
-<nav>
-    <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Categorías</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-</nav>
+    <header>
 
-<section class="hero">
-    <h2>Elegancia en cada detalle</h2>
-    <p>
-        Descubre prendas exclusivas con un estilo moderno y sofisticado.
-        En Vantara encontrarás calidad, diseño y las últimas tendencias
-        para cualquier ocasión.
-    </p>
-</section>
+        <div class="logo">
+            <h1>VANTARA</h1>
+        </div>
 
-<main>
+        <nav>
 
-    <h2 class="titulo">Colección Destacada</h2>
+            <a href="#">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#envios">Envíos</a>
+            <a href="#contacto">Contacto</a>
 
-    <section class="productos">
+        </nav>
 
-        <article>
-            <img src="https://via.placeholder.com/400x500?text=Blazer+Premium" alt="Blazer Premium">
+        <button id="btnCarrito">
 
-            <div class="info">
-                <h3>Blazer Premium</h3>
-                <p class="precio">$189.900</p>
-                <button>Comprar</button>
-            </div>
-        </article>
+            🛒 Carrito
+            <span id="contador">0</span>
 
-        <article>
-            <img src="https://via.placeholder.com/400x500?text=Vestido+Elegance" alt="Vestido Elegance">
+        </button>
 
-            <div class="info">
-                <h3>Vestido Elegance</h3>
-                <p class="precio">$149.900</p>
-                <button>Comprar</button>
-            </div>
-        </article>
+    </header>
 
-        <article>
-            <img src="https://via.placeholder.com/400x500?text=Chaqueta+Urban" alt="Chaqueta Urban">
+    <!-- HERO -->
 
-            <div class="info">
-                <h3>Chaqueta Urban</h3>
-                <p class="precio">$169.900</p>
-                <button>Comprar</button>
-            </div>
-        </article>
+    <section class="hero">
+
+        <div class="hero-texto">
+
+            <h2>Descubre tu estilo.</h2>
+
+            <p>
+
+                Moda elegante, moderna y exclusiva para quienes buscan destacar.
+
+            </p>
+
+            <a href="#catalogo">
+
+                <button>Comprar ahora</button>
+
+            </a>
+
+        </div>
 
     </section>
 
-</main>
+    <!-- CATÁLOGO -->
 
-<footer>
-    <p>&copy; 2026 <strong>VANTARA</strong>. Todos los derechos reservados.</p>
+    <main id="catalogo">
 
-    <p>
-        Instagram |
-        Facebook |
-        TikTok
-    </p>
-</footer>
+        <h2>Nuestra Colección</h2>
+
+        <section class="productos">
+
+            <!-- Producto -->
+
+            <article class="producto">
+
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600" alt="Camiseta">
+
+                <h3>Camiseta Urban</h3>
+
+                <p>$79.900</p>
+
+                <button onclick="agregarCarrito('Camiseta Urban',79900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600" alt="Vestido">
+
+                <h3>Vestido country</h3>
+
+                <p>$169.900</p>
+
+                <button onclick="agregarCarrito('Vestido country',169900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600" alt="Chaqueta">
+
+                <h3>Chaqueta men</h3>
+
+                <p>$189.900</p>
+
+                <button onclick="agregarCarrito('Chaqueta men',189900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600" alt="Blazer">
+
+                <h3>Body Luxury</h3>
+
+                <p>$239.900</p>
+
+                <button onclick="agregarCarrito('Body Luxury',239900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600" alt="Tenis">
+
+                <h3>Tenis Casual</h3>
+
+                <p>$219.900</p>
+
+                <button onclick="agregarCarrito('Tenis Casual',219900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Bolso">
+
+                <h3>Bolso Deluxe</h3>
+
+                <p>$149.900</p>
+
+                <button onclick="agregarCarrito('Bolso Deluxe',149900)">
+                    Agregar
+                </button>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- CARRITO -->
+
+    <aside id="carrito">
+
+        <h2>Carrito de Compras</h2>
+
+        <div id="listaCarrito"></div>
+
+        <h3>
+
+            Total:
+            <span id="total">$0</span>
+
+        </h3>
+
+        <button onclick="abrirCompra()">
+
+            Finalizar Compra
+
+        </button>
+
+    </aside>
+
+
+                    type="text"
+                    placeholder="Nombre Completo"
+                    required>
+
+                <input
+                    type="text"
+                    placeholder="Dirección">
+
+                <select>
+
+                    <option>Medellín</option>
+                    <option>Bogotá</option>
+                    <option>Cali</option>
+                    <option>Barranquilla</option>
+                    <option>Cartagena</option>
+                    <option>Pereira</option>
+                    <option>Manizales</option>
+                    <option>Bucaramanga</option>
+
+                </select>
+
+                <input
+                    type="tel"
+                    placeholder="Celular">
+
+
+<h3>Método de Pago</h3>
+
+<select id="metodoPago" required>
+    <option value="">Seleccione un método</option>
+    <option value="Tarjeta">Tarjeta Débito / Crédito</option>
+    <option value="Nequi">Nequi</option>
+    <option value="PSE">PSE</option>
+</select>
+
+<input
+    type="text"
+    id="numeroCuenta"
+    placeholder="Número de cuenta o número Nequi"
+    required>
+
+    <!-- ENVÍOS -->
+
+    <section id="envios">
+
+        <h2>Envíos</h2>
+
+        <p>
+
+            Envíos a nivel Nacional.
+
+        </p>
+
+        <ul>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="contacto">
+
+        <h2>VANTARA</h2>
+
+        <p>
+
+            📍 Carrera 70 #45-32
+
+            Medellín, Colombia
+
+        </p>
+
+        <p>
+
+            ☎ +57 300 123 4567
+
+        </p>
+
+        <p>
+
+            ✉ contacto@vantara.com
+
+        </p>
+
+        <div class="redes">
+
+            <a href="#">Instagram: @vantara_urb</a>
+
+            <a href="#">Facebook: @vantaraa_urb</a>
+
+            <a href="#">TikTok: @vantara_urb</a>
+
+        </div>
+
+        <p>
+
+            © 2026 VANTARA.
+            Todos los derechos reservados.
+
+        </p>
+
+    </footer>
 
 </body>
+
 </html>

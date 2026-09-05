@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANTARA | Moda Online</title>
+
+    <link href="c:\Users\usuario\Downloads\luisa\css.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>VANTARA</h1>
+        </div>
+
+        <nav>
+
+            <a href="#">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#envios">Envíos</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+        <button id="btnCarrito">
+
+             Carrito
+            <span id="contador">0</span>
+
+        </button>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-texto">
+
+            <h2>Descubre tu estilo.</h2>
+
+            <p>
+
+                Moda elegante, moderna y exclusiva para quienes buscan destacar.
+
+            </p>
+
+            <a href="#catalogo">
+
+                <button>Comprar ahora</button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <main id="catalogo">
+
+        <h2>Nuestros mas vendidos</h2>
+
+        <section class="productos">
+
+            <article class="producto">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxc9UBJ3UAwdryrYyCjGPHxxsLZxJrcXqLmnYRP1VDlQ&s=10" alt="Camiseta">
+
+                <h3>Camiseta Urban</h3>
+
+                <p>$79.900</p>
+
+                <button onclick="agregarCarrito('Camiseta Urban',79900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fY0OoTeVhfKMpNseQHAXMFkiEXViyTR8Y6GYYHn_Uw&s=10" alt="Vestido">
+
+                <h3>Vestido </h3>
+
+                <p>$169.900</p>
+
+                <button onclick="agregarCarrito('Vestido country',169900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWxkkgxoq3OpHrYAh7z5W4LRFxo1zFJb86JbiY2LDqSA&s" alt="Chaqueta">
+
+                <h3>Chaqueta men</h3>
+
+                <p>$189.900</p>
+
+                <button onclick="agregarCarrito('Chaqueta men',189900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjIyi4bRLXF85AiixMqkBmg4dRq333rcFHjYssFwn4MQ&s=10" alt="Blazer">
+
+                <h3>Body Luxury</h3>
+
+                <p>$239.900</p>
+
+                <button onclick="agregarCarrito('Body Luxury',239900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ65aypO1JLo6PqgZpAFqijDND7CZQhe6mUnuNvzbofFA&s=10" alt="Tenis">
+
+                <h3>pant men</h3>
+
+                <p>$219.900</p>
+
+                <button onclick="agregarCarrito('Tenis Casual',219900)">
+                    Agregar
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlskrUU0ETyF6TYG1id4EPwkdNRcICRk6o86IQntxIow&s=10" alt="Bolso">
+
+                <h3>Bolso girl</h3>
+
+                <p>$149.900</p>
+
+                <button onclick="agregarCarrito('Bolso Deluxe',149900)">
+                    Agregar
+                </button>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <aside id="carrito">
+
+        <h2>Carrito de Compras</h2>
+
+        <div id="listaCarrito"></div>
+
+        <h3>
+
+            Total:
+            <span id="total">$0</span>
+
+        </h3>
+
+        <button onclick="abrirCompra()">
+
+            Finalizar Compra
+
+        </button>
+
+    </aside>
+
+
+                    type="text"
+                    placeholder="Nombre Completo"
+                    required>
+
+                <input
+                    type="text"
+                    placeholder="Dirección">
+
+                <select>
+
+                    <option>Medellín</option>
+                    <option>Bogotá</option>
+                    <option>Cali</option>
+                    <option>Barranquilla</option>
+                    <option>Cartagena</option>
+                    <option>Pereira</option>
+                    <option>Manizales</option>
+                    <option>Bucaramanga</option>
+
+                </select>
+
+                <input
+                    type="tel"
+                    placeholder="Celular">
+
+
+<h3>Método de Pago</h3>
+
+<select id="metodoPago" required>
+    <option value="">Seleccione un método</option>
+    <option value="Tarjeta">Tarjeta Débito / Crédito</option>
+    <option value="Nequi">Nequi</option>
+    <option value="PSE">PSE</option>
+</select>
+
+<input
+    type="text"
+    id="numeroCuenta"
+    placeholder="Número de cuenta o número Nequi"
+    required>
+
+
+    <section id="envios">
+
+        <h2>Envíos</h2>
+
+        <p>
+
+            Envíos a nivel Nacional.
+
+        </p>
+
+        <ul>
+
+    </section>
+
+    <footer id="contacto">
+
+        <h2>VANTARA</h2>
+
+        <p>
+
+            📍 Carrera 70 #45-32
+
+            Medellín, Colombia
+
+        </p>
+
+        <p>
+
+            ☎ +57 300 123 4567
+
+        </p>
+
+        <p>
+
+            ✉ contacto@vantara.com
+
+        </p>
+
+        <div class="redes">
+
+            <a href="#">Instagram: @vantara_urb</a>
+
+            <a href="#">Facebook: @vantaraa_urb</a>
+
+            <a href="#">TikTok: @vantara_urb</a>
+
+        </div>
+
+        <p>
+
+            © 2026 VANTARA.
+            Todos los derechos reservados.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

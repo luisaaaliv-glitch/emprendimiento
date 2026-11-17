@@ -1,296 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VANTARA | Moda Online</title>
-
-    <link rel="stylesheet" href="estilos.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <script src="script.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANTARA | Streetwear & Urban Menswear</title>
+  <link rel="stylesheet" href="Untitled-1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- HEADER -->
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="brand" data-link>
+        <span class="brand-logo"></span>
+        <span class="brand-name">VANTARA</span>
+        <span class="brand-tag">STREETWEAR</span>
+      </a>
 
-    <header>
+      <nav class="main-nav" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link" data-link>Inicio</a></li>
+          <li><a href="#productos" class="nav-link" data-link>Catalogo</a></li>
+          <li><a href="#nosotros" class="nav-link" data-link>Nosotros</a></li>
+          <li><a href="#galeria" class="nav-link" data-link>Oufits</a></li>
+          <li><a href="#contacto" class="nav-link" data-link>Contacto</a></li>
+          <li>
+            <button id="cart-toggle" class="cart-btn" aria-label="Abrir carrito">
+              <span class="cart-icon">🛒</span>
+              <span id="cart-count" class="cart-count">0</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="logo">
-            <h1>VANTARA</h1>
+  <main>
+    <!-- SECCIÓN INICIO / HERO -->
+    <section id="inicio" class="page active">
+      <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-kicker">✦ DROP 04 / RED & GOLD EDITION ✦</p>
+          <h1 class="hero-title">RAW URBAN <span>CULTURE</span></h1>
+          <p class="hero-slogan">"NO RULES. JUST STREETWEAR."</p>
+          <p class="hero-intro">
+            Vantara define el nuevo estándar de la moda urbana masculina. Siluetas oversize, hoodies pesados, 
+            pantalones cargo tácticos y estampados gráficos con actitud underground.
+          </p>
+          <a href="#productos" class="btn btn-cta" data-link>VER ÚLTIMA COLECCION</a>
         </div>
+      </div>
 
-        <nav>
+      <div class="wrap section">
+        <h2 class="section-title">THE STREET STANDARD</h2>
+        <div class="feature-row">
+          <div class="feature-card">
+            <span class="feature-ico"></span>
+            <h3>OVERSIZE FIT</h3>
+            <p>Cortes holgados y caídas pesadas diseñadas para el movimiento urbano real.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-ico"></span>
+            <h3>HEAVY COTTON</h3>
+            <p>Textiles de alto gramaje (400+ GSM) que garantizan estructura y durabilidad.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-ico"></span>
+            <h3>LIMITED COLECTION</h3>
+            <p>Lanzamientos exclusivos en cantidades reducidas. Una vez agotado, no vuelve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <a href="#">Inicio</a>
-            <a href="#catalogo">Catálogo</a>
-            <a href="#envios">Envíos</a>
-            <a href="#contacto">Contacto</a>
+    <!-- SECCIÓN CULTURA / NOSOTROS -->
+    <section id="nosotros" class="page">
+      <div class="wrap section">
+        <h2 class="section-title">ABOUT VANTARA</h2>
 
-        </nav>
-
-        <button id="btnCarrito">
-
-            🛒 Carrito
-            <span id="contador">0</span>
-
-        </button>
-
-    </header>
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="hero-texto">
-
-            <h2>Descubre tu estilo.</h2>
-
+        <div class="about-grid">
+          <div class="about-text">
             <p>
-
-                Moda elegante, moderna y exclusiva para quienes buscan destacar.
-
+              VANTARA nace en la calle. Inspirados en el movimiento del skate, la música urbana y la cultura rave,
+              creamos prendas con personalidad contundente que rompen el molde del fast fashion tradicional.
             </p>
-
-            <a href="#catalogo">
-
-                <button>Comprar ahora</button>
-
-            </a>
-
+            <p>
+              Utilizamos tonos negros profundos, rojos encendidos y estampados dorados metálicos para reflejar el pulso 
+              de la noche urbana. Cada prenda cuenta una historia de independencia y estilo propio.
+            </p>
+          </div>
+          <img class="about-photo"
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJug5aH1Zxm3M5BQD3cj4qCCcM-O2xzW39tunj4x172A&s"
+               alt="Streetwear Vantara tienda">
         </div>
 
+        <h2 class="section-title">CREW & DESIGNERS</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="samu.jpeg" alt="Foto de Samuel Calle">
+            <h4>Samuel Calle</h4>
+            <p>Creador/Dueño &amp; Creative</p>
+          </div>
+          <div class="team-card">
+            <img src="lu.jpg" alt="Foto de Luisa Alvarez">
+            <h4>Luisa Alvarez</h4>
+            <p>Directora Ejecutiva</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- CATÁLOGO -->
-
-    <main id="catalogo">
-
-        <h2>Nuestra Colección</h2>
-
-        <section class="productos">
-
-            <!-- Producto -->
-
-            <article class="producto">
-
-                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600" alt="Camiseta">
-
-                <h3>Camiseta Urban</h3>
-
-                <p>$79.900</p>
-
-                <button onclick="agregarCarrito('Camiseta Urban',79900)">
-                    Agregar
-                </button>
-
-            </article>
-
-            <article class="producto">
-
-                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600" alt="Vestido">
-
-                <h3>Vestido country</h3>
-
-                <p>$169.900</p>
-
-                <button onclick="agregarCarrito('Vestido country',169900)">
-                    Agregar
-                </button>
-
-            </article>
-
-            <article class="producto">
-
-                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600" alt="Chaqueta">
-
-                <h3>Chaqueta men</h3>
-
-                <p>$189.900</p>
-
-                <button onclick="agregarCarrito('Chaqueta men',189900)">
-                    Agregar
-                </button>
-
-            </article>
-
-            <article class="producto">
-
-                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600" alt="Blazer">
-
-                <h3>Body Luxury</h3>
-
-                <p>$239.900</p>
-
-                <button onclick="agregarCarrito('Body Luxury',239900)">
-                    Agregar
-                </button>
-
-            </article>
-
-            <article class="producto">
-
-                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600" alt="Tenis">
-
-                <h3>Tenis Casual</h3>
-
-                <p>$219.900</p>
-
-                <button onclick="agregarCarrito('Tenis Casual',219900)">
-                    Agregar
-                </button>
-
-            </article>
-
-            <article class="producto">
-
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Bolso">
-
-                <h3>Bolso Deluxe</h3>
-
-                <p>$149.900</p>
-
-                <button onclick="agregarCarrito('Bolso Deluxe',149900)">
-                    Agregar
-                </button>
-
-            </article>
-
-        </section>
-
-    </main>
-
-    <!-- CARRITO -->
-
-    <aside id="carrito">
-
-        <h2>Carrito de Compras</h2>
-
-        <div id="listaCarrito"></div>
-
-        <h3>
-
-            Total:
-            <span id="total">$0</span>
-
-        </h3>
-
-        <button onclick="abrirCompra()">
-
-            Finalizar Compra
-
-        </button>
-
-    </aside>
-
-
-                    type="text"
-                    placeholder="Nombre Completo"
-                    required>
-
-                <input
-                    type="text"
-                    placeholder="Dirección">
-
-                <select>
-
-                    <option>Medellín</option>
-                    <option>Bogotá</option>
-                    <option>Cali</option>
-                    <option>Barranquilla</option>
-                    <option>Cartagena</option>
-                    <option>Pereira</option>
-                    <option>Manizales</option>
-                    <option>Bucaramanga</option>
-
-                </select>
-
-                <input
-                    type="tel"
-                    placeholder="Celular">
-
-
-<h3>Método de Pago</h3>
-
-<select id="metodoPago" required>
-    <option value="">Seleccione un método</option>
-    <option value="Tarjeta">Tarjeta Débito / Crédito</option>
-    <option value="Nequi">Nequi</option>
-    <option value="PSE">PSE</option>
-</select>
-
-<input
-    type="text"
-    id="numeroCuenta"
-    placeholder="Número de cuenta o número Nequi"
-    required>
-
-    <!-- ENVÍOS -->
-
-    <section id="envios">
-
-        <h2>Envíos</h2>
-
-        <p>
-
-            Envíos a nivel Nacional.
-
-        </p>
-
-        <ul>
-
+    <!-- SECCIÓN PRODUCTOS -->
+    <section id="productos" class="page">
+      <div class="wrap section">
+        <h2 class="section-title">LATEST DROPS </h2>
+        <p class="section-sub">Explora las prendas del Drop actual. Selecciónalas para ver detalles o agregarlas directo a tu stash.</p>
+        <div id="products-grid" class="products-grid"></div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- SECCIÓN GALERÍA / LOOKBOOK -->
+    <section id="galeria" class="page">
+      <div class="wrap section">
+        <h2 class="section-title">LOOKBOOK / STREET VIBES</h2>
 
-    <footer id="contacto">
-
-        <h2>VANTARA</h2>
-
-        <p>
-
-            📍 Carrera 70 #45-32
-
-            Medellín, Colombia
-
-        </p>
-
-        <p>
-
-            ☎ +57 300 123 4567
-
-        </p>
-
-        <p>
-
-            ✉ contacto@vantara.com
-
-        </p>
-
-        <div class="redes">
-
-            <a href="#">Instagram: @vantara_urb</a>
-
-            <a href="#">Facebook: @vantaraa_urb</a>
-
-            <a href="#">TikTok: @vantara_urb</a>
-
+        <div class="carousel" id="carousel">
+          <div class="carousel-track" id="carousel-track"></div>
+          <button class="carousel-btn prev" id="carousel-prev" aria-label="Anterior">❮</button>
+          <button class="carousel-btn next" id="carousel-next" aria-label="Siguiente">❯</button>
+          <div class="carousel-dots" id="carousel-dots"></div>
         </div>
 
-        <p>
+        <h2 class="section-title">COMMUNITY MOODBOARD</h2>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
 
-            © 2026 VANTARA.
-            Todos los derechos reservados.
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="page">
+      <div class="wrap section">
+        <h2 class="section-title">JOIN THE CREW</h2>
+        <p class="section-sub">¿Colaboraciones, eventos o dudas sobre envíos? Escríbenos directamente.</p>
 
-        </p>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <label>
+              Tu Nombre
+              <input type="text" name="nombre" placeholder="Ej. Carlos / AKA Vantara" required>
+            </label>
+            <label>
+              Correo Electrónico
+              <input type="email" name="correo" placeholder="tu@email.com" required>
+            </label>
+          </div>
 
-    </footer>
+          <div class="form-row">
+            <label>
+              Teléfono / WhatsApp
+              <input type="tel" name="telefono" placeholder="+57 300 000 0000">
+            </label>
+            <label>
+              Asunto
+              <input type="text" name="asunto" placeholder="Ej. Pedidos / Colaboración" required>
+            </label>
+          </div>
 
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-cta">ENVIAR MENSAJE </button>
+            <button type="reset" class="btn btn-ghost">LIMPIAR</button>
+          </div>
+
+          <p id="form-msg" class="form-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <span class="brand-logo"></span>
+        <strong>VANTARA STREETWEAR</strong>
+        <p>Urban apparel & streetwear culture. Redefiniendo el estilo de las calles.</p>
+      </div>
+      <div class="footer-links">
+        <h4>NAVEGACIÓN</h4>
+        <a href="#inicio" data-link>Inicio</a>
+        <a href="#productos" data-link>Drops</a>
+        <a href="#galeria" data-link>Lookbook</a>
+        <a href="#contacto" data-link>Contacto</a>
+      </div>
+      <div class="footer-links">
+        <h4>REDES & COMMUNITY</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Discord Crew</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 VANTARA STREETWEAR. ALL RIGHTS RESERVED. BORN IN THE STREETS.</p>
+  </footer>
+
+  <!-- MODAL PRODUCTO -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- PANEL CARRITO -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Tu Stash de Compras">
+    <div class="cart-head">
+      <h3>YOUR STASH 🛒</h3>
+      <button class="modal-close" id="cart-close" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-foot">
+      <p class="cart-total">TOTAL: <span id="cart-total">$0</span></p>
+      <button class="btn btn-ghost" id="cart-clear">VACIAR STASH</button>
+      <button class="btn btn-cta" id="cart-checkout">CHECKOUT </button>
+    </div>
+  </aside>
+
+  <!-- TOAST NOTIFICACIÓN -->
+  <div id="toast" class="toast"></div>
+
+  <script src="Untitled-1.js"></script>
 </body>
-
 </html>
